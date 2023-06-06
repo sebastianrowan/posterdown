@@ -4,25 +4,35 @@
 \alias{posterdown_html}
 \alias{posterdown_betterland}
 \alias{posterdown_betterport}
+\alias{posterdown_sbr}
 \title{Posterdown HTML format (using pagedown::poster_relaxed)}
 \usage{
-posterdown_html(..., template = find_resource("posterdown_html",
-  "template.html"), css = NULL)
+posterdown_html(
+  ...,
+  template = find_resource("posterdown_html", "template.html"),
+  css = NULL
+)
 
-posterdown_betterland(...,
+posterdown_betterland(
+  ...,
   template = find_resource("posterdown_betterland", "template.html"),
-  css = NULL)
+  css = NULL
+)
 
-posterdown_betterport(...,
+posterdown_betterport(
+  ...,
   template = find_resource("posterdown_betterport", "template.html"),
-  css = NULL)
+  css = NULL
+)
+
+posterdown_sbr(
+  ...,
+  template = find_resource("posterdown_sbr", "template.html"),
+  css = NULL
+)
 }
 \arguments{
 \item{...}{Additional arguments to \code{rmarkdown::html_document}}
-
-\item{template}{See \code{\link{html_paged}()}.}
-
-\item{css}{See \code{\link{html_paged}()}.}
 }
 \value{
 R Markdown output format to pass to
@@ -34,6 +44,8 @@ BetterPoster movement from twitter.
 
 The output format \code{poster_betterport()} mimics the style of the
 BetterPoster movement from twitter.
+
+The output format \code{posterdown_sbr()} is my custom template
 }
 \examples{
 \donttest{

@@ -3,7 +3,6 @@
 \docType{package}
 \name{posterdown}
 \alias{posterdown}
-\alias{posterdown-package}
 \title{posterdown package}
 \description{
 This package creates posters for conferences
